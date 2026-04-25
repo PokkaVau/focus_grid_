@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | FocusGrid</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo">
+            <i class="fas fa-border-all"></i>
+            <h1>FocusGrid</h1>
+            <span class="tagline">Your productivity, structured.</span>
+        </div>
+        <div class="header-actions">
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link" title="Home / Refresh" aria-label="Home"><i class="fas fa-home"></i></a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <h2 class="page-title">Privacy Policy</h2>
+        <section class="page-content">
+            <p>At <strong>FocusGrid</strong>, your privacy and data security are our top priorities. This policy explains how we handle your information and secure your data.</p>
+            
+            <h2>1. Local Storage Only</h2>
+            <p>FocusGrid is a completely client-side application. We <strong>do not</strong> use databases, external servers, or cloud storage to store your personal data. All of your tasks, habits, and preferences are stored exclusively on your device using your browser's <code>localStorage</code>.</p>
+            
+            <h2>2. No Data Collection</h2>
+            <p>Because everything stays on your device, we do not track, collect, analyze, or sell your personal data. Your productivity workflow is entirely private to you.</p>
+            
+            <h2>3. Security Measures</h2>
+            <p>Even though there is no backend, we have implemented strict frontend security practices:</p>
+            <ul>
+                <li><strong>XSS Prevention:</strong> All inputs (such as task names and habit names) are safely sanitized and handled as plain text before being rendered to the screen.</li>
+                <li><strong>No Unsafe Scripts:</strong> The application does not use <code>eval()</code> or other unsafe methods to process logic.</li>
+                <li><strong>No External Trackers:</strong> FocusGrid does not inject any third-party tracking cookies or analytics scripts.</li>
+            </ul>
+
+            <h2>4. Data Deletion</h2>
+            <p>Because your data lives in your browser, you are in full control. If you wish to delete all your data, simply clear your browser's history and website data, and your FocusGrid information will be permanently erased.</p>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <span class="separator">&bull;</span>
+            <a href="about.html">About</a>
+        </div>
+        <div class="social-section">
+            <p>Connect with me</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/PokkaVau" target="_blank" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/md-zayed-iqbal-372852254/" target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/PokkaVau" target="_blank" class="social-btn github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 FocusGrid. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
